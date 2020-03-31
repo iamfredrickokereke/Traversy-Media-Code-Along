@@ -4,6 +4,7 @@ const app = http.createServer();
 
 const port = 5500;
 
+const host = 127. 0 . 0. 1;
 
 
-http.listen()
+http.listen(port)
