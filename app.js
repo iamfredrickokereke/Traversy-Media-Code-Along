@@ -12,4 +12,4 @@ const port = 5500;
 const host = '127.0.0.1';
 
 
-http.listen(port, host, () => { console.log("Server is running on " + port +" hosted on " + host)})
+app.listen(port, host, () => { console.log("Server is running on port " + port +" hosted on " + host)})
