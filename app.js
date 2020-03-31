@@ -15,7 +15,7 @@ fs.readFile("index.html", (error, File ) => {
     const app = http.createServer((request, response) => {
 
         response.statusCode = 200;
-        response.setHeader('Content-type', 'text/plain');
+        response.setHeader('Content-type', 'text/html');
         response.write(File)
         response.end();
     })
