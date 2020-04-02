@@ -19,6 +19,10 @@ const path = require('path');
 
 
  console.log(path.parse(__filename).name);
+
+ // append path
+
+ console.log(path.join(__dirname, '/test', 'hello.html'));
  
  
  
