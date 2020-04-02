@@ -1,7 +1,7 @@
-const person = {
-    name : "Fred Doe",
-    Age : "30"
-}
+// const person = {
+//     ourname : "Fred Doe",
+//     ourAge : "30"
+// }
 
 class Animal {
     constructor(name, size){
@@ -19,5 +19,12 @@ class Animal {
 // var y = new Animal("Lion", "Mighty")
 // y.greeting()
 // x.greeting();
-module.exports = person;
+
+// module.exports = {
+   // name : person,
+//     name2 : Animal
+// }
+
+
+
 module.exports = Animal;

@@ -1,3 +1,9 @@
-const person = require('./person')
+const Animal = require('./person')
 
-console.log(person)
+
+const Animal1 = new Animal('monkey', 34)
+
+
+console.log(Animal)
+
+console.log(Animal1);
