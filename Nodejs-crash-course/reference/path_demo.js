@@ -23,6 +23,9 @@ const path = require('path');
  // append path
 
  console.log(path.join(__dirname, '/test', 'hello.html'));
+ console.log(path.join(__dirname, '\test', 'hello.txt'));
+ console.log(path.join(__dirname, 'test', 'hello.html'));
+ 
  
  
  
