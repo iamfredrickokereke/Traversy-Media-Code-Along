@@ -6,7 +6,7 @@ console.log(fs);
 
 // create a folder
 
-fs.mkdir(path.join(__dirname, '/test', 'folder3'), (error) => {
+fs.mkdir(path.join(__dirname, '/test', 'folder119'), (error) => {
     if (error) {
         throw error;
     }
@@ -18,7 +18,13 @@ fs.mkdir(path.join(__dirname, '/test', 'folder3'), (error) => {
 
 // create and write to folder
 
-fs.writeFile('./test', "hello, it works", (error) => {
+fs.writeFile('./test/folder119', "hello, it works", (error) => {
 
+    if (error) {
+        throw error;
+    }
+
+    console.log("file created");
+    
 
 })
