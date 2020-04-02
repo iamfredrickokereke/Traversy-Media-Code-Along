@@ -4,7 +4,7 @@ const path = require('path');
 // log all fs module method
 console.log(fs);
 
-// make a folder
+// create a folder
 
 fs.mkdir(path.join(__dirname, '/test', 'folder3'), (error) => {
     if (error) {
@@ -15,3 +15,10 @@ fs.mkdir(path.join(__dirname, '/test', 'folder3'), (error) => {
     
 })
 
+
+// create and write to folder
+
+fs.writeFile('./test', "hello, it works", (error) => {
+
+
+})
