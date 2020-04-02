@@ -18,7 +18,7 @@ console.log(fs);
 
 // create and write to folder
 
-fs.writeFile(path.join(__dirname, '/test' ), "hello, it works", (error) => {
+fs.writeFile(path.join(__dirname, './test/folder1129', 'test.txt' ), "hello, it works", (error) => {
 
     if (error) {
         throw error;
