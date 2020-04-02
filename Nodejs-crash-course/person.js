@@ -3,6 +3,8 @@
 //     ourAge : "30"
 // }
 
+
+
 class Animal {
     constructor(name, size){
         this.name = name;
