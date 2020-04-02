@@ -18,7 +18,7 @@ console.log(fs);
 
 // create and write to folder
 
-fs.writeFile('./test/folder12219', "hello, it works", (error) => {
+fs.writeFile(, "hello, it works", (error) => {
 
     if (error) {
         throw error;
