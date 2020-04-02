@@ -44,5 +44,13 @@ console.log(fs);
 // read contents of a file
 
 
-fs.readFile(path.join(__dirname, './test', './test/test.txt'), utf-8, (error, content) => { if (error) throw error; console.log(content);
-})
+// fs.readFile(path.join(__dirname, './test', 'test.txt'), 'utf8', (error, content) => { if (error) throw error; console.log(content);
+// })
+
+var sampleText = "i love nodejs";
+
+fs.rename(path.join(__dirname, './test', 'test.txt'), path.join(__dirname, './test', 'newtest.txt'), (error) => { if (error) {
+    throw error;
+   
+    
+}})
