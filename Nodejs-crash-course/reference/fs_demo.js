@@ -6,7 +6,7 @@ console.log(fs);
 
 // make a folder
 
-fs.mkdir(path.join(__dirname, '/test'), {}, (error) => {
+fs.mkdir(path.join(__dirname, '/test', 'folder1'), {"name" : "fred"}, (error) => {
     if (error) {
         throw error;
     }
