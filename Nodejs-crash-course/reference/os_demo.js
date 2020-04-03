@@ -12,13 +12,13 @@ console.log(os.platform());
 console.log(os.release());
 
 // get os uptime
-console.log(os.uptime);
+console.log(os.uptime());
 
 
 //get os total memory
 
-console.log(os.totalmem);
+console.log(os.totalmem());
 
 // get os free memory
-console.log(os.freemem);
+console.log(os.freemem());
 
