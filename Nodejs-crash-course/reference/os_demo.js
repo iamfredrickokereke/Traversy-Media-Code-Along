@@ -8,3 +8,5 @@ console.log(os.arch());
 
 console.log(os.platform());
 
+// get release
+console.log(os.release());
