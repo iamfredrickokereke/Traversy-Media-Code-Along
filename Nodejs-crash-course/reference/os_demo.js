@@ -13,3 +13,8 @@ console.log(os.release());
 
 // get os uptime
 console.log(os.uptime);
+
+
+//get os total memory
+
+console.log(os.totalmem);
