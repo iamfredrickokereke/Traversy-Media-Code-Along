@@ -11,5 +11,12 @@ which npm
 
 which npx
 
+
+// run below in node REPL
+
+
 // check for promises api
 
+// New Promise APIs
+util.promisify
+require('fs').promises
