@@ -18,3 +18,7 @@ console.log(os.uptime);
 //get os total memory
 
 console.log(os.totalmem);
+
+// get os free memory
+console.log(os.freemem);
+
