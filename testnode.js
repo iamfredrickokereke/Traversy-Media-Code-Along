@@ -4,12 +4,12 @@
 (async (a = 1, ...b) => ({ ...b, a, [a]: `${a}` }))()
 
 //check for npm
-which npm
+which npm;
 
 
 // check for npx
 
-which npx
+which npx;
 
 
 // run below in node REPL
