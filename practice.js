@@ -10,7 +10,7 @@
 
 // setTimeout(y, 4000, 4);
 let  counter = 0;
-const track = setInterval((x) => {
+const track = setInterval(() => {
     console.log("Hello World");
     counter++;
 
