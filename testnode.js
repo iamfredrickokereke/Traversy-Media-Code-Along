@@ -5,3 +5,11 @@
 
 //check for npm
 which npm
+
+
+// check for npx
+
+which npx
+
+// check for promises api
+
