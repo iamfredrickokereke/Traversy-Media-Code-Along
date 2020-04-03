@@ -8,5 +8,8 @@ console.log(os.arch());
 
 console.log(os.platform());
 
-// get release
+// get os release
 console.log(os.release());
+
+// get os uptime
+console.log(os.uptime);
