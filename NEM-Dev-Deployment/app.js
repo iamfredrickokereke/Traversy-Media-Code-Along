@@ -3,8 +3,15 @@ const app = express()
 
 const port = process.env.port || 8080
 
+// INDEX ROUTE
+
 app.get('/', (req, res) => {
-    res.send("it works")
+    res.send("INDEX")
+})
+
+// ABOUT ROUTE
+app.get('/about', (req, res) => {
+    res.send("ABOUT")
 })
 
 app.listen(port, () => { 
