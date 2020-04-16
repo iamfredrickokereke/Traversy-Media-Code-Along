@@ -5,11 +5,11 @@ const port = process.env.port || 8080
 
 // HOW MIDDLEWARE WORKS
 
-app.use((req, res, next ) => {
-    console.log(Date.now());
-    req.name = "fred";
-    next()
-})
+// app.use((req, res, next ) => {
+//     console.log(Date.now());
+//     req.name = "fred";
+//     next()
+// })
 
 // INDEX ROUTE
 
@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 // ABOUT ROUTE
 app.get('/about', (req, res) => {
     //req.name ="oh boy!"
-    console.log(req.name);
+    // console.log(req.name);
     
     res.send("ABOUT")
 })
