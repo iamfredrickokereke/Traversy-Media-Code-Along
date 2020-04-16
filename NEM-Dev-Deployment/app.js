@@ -21,6 +21,9 @@ app.get('/', (req, res) => {
 
 // ABOUT ROUTE
 app.get('/about', (req, res) => {
+    //req.name ="oh boy!"
+    console.log(req.name);
+    
     res.send("ABOUT")
 })
 
