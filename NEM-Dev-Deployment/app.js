@@ -3,6 +3,13 @@ const app = express()
 
 const port = process.env.port || 8080
 
+// HOW MIDDLEWARE WORKS
+
+app.use((req, res, next ) => {
+    console.log(Date.now());
+    next()
+})
+
 // INDEX ROUTE
 
 app.get('/', (req, res) => {
