@@ -7,12 +7,15 @@ const port = process.env.port || 8080
 
 app.use((req, res, next ) => {
     console.log(Date.now());
+    req.name = "fred";
     next()
 })
 
 // INDEX ROUTE
 
 app.get('/', (req, res) => {
+    console.log(req.name);
+    
     res.send("INDEX")
 })
 
