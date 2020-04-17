@@ -3,8 +3,10 @@ const app = express()
 const exphbs = require('express-handlebars')
 
 
-const port = process.env.port || 8080
+const port = process.env.PORT ||8000
 
+app.engine('handlebars', exphbs({defaultLayout : "main"}))
+app.set('view engine', 'handlebars')
 
 // HOW MIDDLEWARE WORKS
 
@@ -19,7 +21,7 @@ const port = process.env.port || 8080
 app.get('/', (req, res) => {
     console.log(req.name);
     
-    res.send("INDEX")
+    res.render("INDEX")
 })
 
 // ABOUT ROUTE
