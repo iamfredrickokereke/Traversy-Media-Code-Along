@@ -31,7 +31,7 @@ app.get('/about', (req, res) => {
     //req.name ="oh boy!"
     // console.log(req.name);
     
-    res.render("ABOUT")
+    res.render("ABOUT", {})
 })
 
 app.listen(port, () => { 
