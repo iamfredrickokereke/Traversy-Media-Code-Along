@@ -20,8 +20,10 @@ app.set('view engine', 'handlebars')
 
 app.get('/', (req, res) => {
     console.log(req.name);
-    
-    res.render("INDEX")
+    const title = "Our home page";
+    res.render("INDEX", {
+        title : title
+    })
 })
 
 // ABOUT ROUTE
