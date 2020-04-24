@@ -30,9 +30,10 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     //req.name ="oh boy!"
     // console.log(req.name);
+    const title = "this na the about side"
     
     res.render("ABOUT", {
-        title
+        title: title
     })
 })
 
