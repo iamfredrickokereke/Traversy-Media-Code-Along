@@ -24,7 +24,6 @@ app.get('/', (req, res) => {
     //     res.send(file.toString())
         
     // })
-
     // res.sendFile takes an absolute path to a file and
     // sets the mime type based n the file extname
     res.sendFile(__dirname + '/home.html', (err) => {
