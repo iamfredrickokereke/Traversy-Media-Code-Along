@@ -1,25 +1,29 @@
+const fs = require('fs');
+const http = require('http');
 
+const form = `<form action="/" method="POST">   
+<label for="username">Username </label>    
+<input type="text" name="username">
+<button type="submit">Submit</button>
+</form>`
 
+http.createServer((req, res) =>{
 
+    let body = [];
 
-// const y = (x)=> {
-//     console.log(`hello after ${x} seconds`);
-    
-// }
+    req.on('data', (chunk) => {
+        body.push(chunk)
+    })
 
+    req.on('end', () => {
 
-// setTimeout(y, 4000, 4);
-let  counter = 0;
-const track = setInterval(() => {
-    console.log("Hello World");
-    counter++;
-
-    if(counter === 3){
-
-        console.log("DONE!");
+        let input = Buffer.concat(body).toString().split('=')[1]
+        console.log(input);
         
-        clearInterval(track);
-    }
-    
-}, 500);
+    })
 
+    res.setHeader('Content-Type', 'text/html')
+    res.write(form);
+    res.end();
+    
+}).listen(2000)
