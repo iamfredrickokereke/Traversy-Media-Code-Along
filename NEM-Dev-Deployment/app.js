@@ -32,7 +32,7 @@ app.get('/about', (req, res) => {
     // console.log(req.name);
     const title = "this na the about side"
     
-    res.render("ABOUT", {
+    res.render("test", {
         title: title
     })
 })
